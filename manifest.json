@@ -1,0 +1,24 @@
+{
+    "name": "Learner's Dictionary",
+    "description": "Learner's Dictionary Chrome Extension",
+    "version": "0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "contextMenus"
+    ],
+    "omnibox": {
+        "keyword": "en"
+    },
+    "content_security_policy": {
+        "extension_pages": "default-src 'self'"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "Merriam-Webster-16.png"
+    },
+    "icons": {
+        "16": "Merriam-Webster-16.png"
+    }
+}
